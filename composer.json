@@ -1,0 +1,57 @@
+{
+    "name": "cardee/smsc-ru",
+    "description": "SmscRu notifications channel for Laravel 5.3+ (including Laravel 13)",
+    "keywords": [
+        "laravel",
+        "notifications",
+        "smscentre",
+        "smsc",
+        "СМС-Центр"
+    ],
+    "homepage": "https://github.com/cardee2000/smsc-ru",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergei Gruzdov",
+            "email": "cardee@mifesta.com",
+            "homepage": "https://github.com/cardee2000",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.2",
+        "illuminate/queue": "5.1 - 5.8|^6.0",
+        "illuminate/notifications": "5.1 - 5.8|^6.0",
+        "illuminate/support": "5.1 - 5.8|^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\SmscRu\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\SmscRu\\Test\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NotificationChannels\\SmscRu\\SmscRuServiceProvider"
+            ]
+        }
+    }
+}
