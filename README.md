@@ -1,12 +1,11 @@
-# Smsc notifications channel for Laravel 5.3+
+# SmscRu notifications channel for Laravel
+
+SmscRu notifications channel for Laravel 5.3+ under the `cardee` vendor, including Laravel 13+.
+
+Namespace `NotificationChannels\SmscRu` is preserved for drop-in use.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/cardee/smsc-ru.svg?style=flat-square)](https://packagist.org/packages/cardee/smsc-ru)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/cardee/smsc-ru/master.svg?style=flat-square)](https://travis-ci.org/cardee/smsc-ru)
-[![StyleCI](https://styleci.io/repos/65589451/shield)](https://styleci.io/repos/65589451)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/aceefe27-ba5a-49d7-9064-bc3abea0abeb.svg?style=flat-square)](https://insight.sensiolabs.com/projects/aceefe27-ba5a-49d7-9064-bc3abea0abeb)
-[![Quality Score](https://img.shields.io/scrutinizer/g/cardee/smsc-ru.svg?style=flat-square)](https://scrutinizer-ci.com/g/cardee/smsc-ru)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/cardee/smsc-ru/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/cardee/smsc-ru/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/cardee/smsc-ru.svg?style=flat-square)](https://packagist.org/packages/cardee/smsc-ru)
 
 This package makes it easy to send notifications using [smsc.ru](https://smsc.ru) (aka СМС–Центр) with Laravel 5.3+.
@@ -33,11 +32,18 @@ Install this package with Composer:
 composer require cardee/smsc-ru
 ```
 
-If you're using Laravel 5.x you'll also need to specify a version constraint:
+Version guide:
 
-```bash
-composer require cardee/smsc-ru -v 2.0.3
-```
+| Package | Laravel |
+|---|---|
+| `^3.0` | 5.1–7 |
+| `^3.1` / `^3.2` | 5.1–8 |
+| `^3.3` | 5.1–9 |
+| `^3.4` | 5.1–10 |
+| `^3.5` | 5.1–11 |
+| `^3.6` | 5.1–12 |
+| `^3.7` | 5.1–13 |
+
 
 The service provider gets loaded automatically. Or you can do this manually:
 ```php

@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.7.0 - 2026-11-11
+
+- Added support for Laravel 13
+- Published as cardee/smsc-ru maintained fork
+
 All notable changes to `smsc-ru` will be documented in this file
 
 ## 3.6.0 - 2025-04-15
