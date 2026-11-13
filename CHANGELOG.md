@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.7.2 - 2026-11-13
+
+- README: English primary + Russian translation
+- Security: report via GitHub issue tracker (not email)
+
 ## 3.7.1 - 2026-11-13
 
 - README переведён на русский; убрано упоминание vendor в описании
